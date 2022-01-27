@@ -14,14 +14,14 @@ public class DemoProjectApplication {
 		SpringApplication.run(DemoProjectApplication.class, args);
 	}
 
+	@GetMapping("/")
+	public String Raiz(){
+		return String.format("Bienvenidos a mi primera prueba");
+	}
+
 	@GetMapping("/hello")
 	public String Hello(@RequestParam(value = "name", defaultValue = "World") String Name){
 		return String.format("Hello %s!", Name);
-	}
-
-	@GetMapping("/testing")
-	public String Testing(@RequestParam(value = "test", defaultValue = "a todos") String Name){
-		return String.format("Hola %s!", Name);
 	}
 
 }

@@ -19,8 +19,17 @@ class DemoProjectApplicationTests {
 
 	@Test
 	void rootTest(@Autowired TestRestTemplate restTemplate) {
-		assertThat(restTemplate.getForObject("/hello", String.class))
-				.isEqualTo("Hello World!");
+		assertThat(restTemplate.getForObject("/", String.class)).isEqualTo("Bienvenidos a mi primera prueba");
+	}
+
+	@Test
+	void rootTestHello(@Autowired TestRestTemplate restTemplate) {
+		assertThat(restTemplate.getForObject("/hello", String.class)).isEqualTo("Hello World!");
+	}
+
+	@Test
+	void rootTestHelloNombre(@Autowired TestRestTemplate restTemplate) {
+		assertThat(restTemplate.getForObject("/hello?name=Luis", String.class)).isEqualTo("Hello Luis!");
 	}
 
 	/*@Test
