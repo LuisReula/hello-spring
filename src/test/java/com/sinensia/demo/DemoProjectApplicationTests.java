@@ -204,7 +204,10 @@ class DemoProjectApplicationTests {
 
 		@Test
 		void appCanAddNullReturnsFloat() {
-			assertThat(app.canAdd(null, 2f));	}
+			Exception thrown = assertThrows(NullPointerException.class, ()->{
+					Float ret = (Float) app.canAdd(null, 2f);
+			});
+		}
 	}
 }
 
