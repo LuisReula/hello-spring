@@ -160,8 +160,7 @@ class DemoProjectApplicationTests {
 		});
 	}
 
-
-	@DisplayName("multiple additions")
+	@DisplayName("multiple multiplies")
 	@ParameterizedTest(name="{displayName} [{index}] {0} + {1} = {2}")
 	@CsvSource({
 			"1,   2,   3",
@@ -195,22 +194,83 @@ class DemoProjectApplicationTests {
 
 		@Test
 		void appCanAddReturnsInteger() {
-			assertThat(app.canAdd(1f, 2f)).isEqualTo(3);
+			assertThat(app.add(1f, 2f)).isEqualTo(3);
 		}
 
 		@Test
 		void appCanAddReturnsFloat() {
-			assertThat(app.canAdd(1.5f, 2f)).isEqualTo(3.5f);
+			assertThat(app.add(1.5f, 2f)).isEqualTo(3.5f);
 		}
 
 		@Test
 		void appCanAddNullReturnsFloat() {
 			Exception thrown = assertThrows(NullPointerException.class, ()->{
-					Float ret = (Float) app.canAdd(null, 2f);
+					Float ret = (Float) app.add(null, 2f);
 			});
 			assertTrue(thrown.toString().contains("NullPointerException"));
 			//alternatively thrown.getMessage().contains("");
 		}
 	}
+
+	@Nested
+	@DisplayName(value="Multiply tests")
+	class MultiplyTests {
+		@DisplayName("multiple multiplies")
+		@ParameterizedTest(name="{displayName} [{index}] {0} * {1} = {2}")
+		@CsvSource({
+				"1,   2,   2",
+				"1,   1,   1",
+				"1.0, 1.0, 1.0",
+				"1,  -2,  -2",
+				"1.5, 2,   3.0",
+				"'',  2,   0",
+				"1.5, 1.5, 2.25"
+		})
+		void canMultiplyCsvParameterizedFloat(String a, String b, String expected) {
+			assertThat(restTemplate.getForObject("/multiply?a="+a+"&b="+b, Float.class))
+					.isEqualTo(Float.parseFloat(expected));
+		}
+	}
+
+	@Nested
+	@DisplayName(value="Subtractions tests")
+	class SubtractionTests {
+		@DisplayName("multiple subtractions")
+		@ParameterizedTest(name="[{index}] {0} - {1} = {2}")
+		@CsvSource({
+				"1,   2,   -1",
+				"1,   1,   0",
+				"1.0, 1.0, 0",
+				"1,  -2,  3",
+				"1.5, 2,   -0.5",
+				"'',  2,   -2",
+				"1.5, 1.5, 0"
+		})
+		void canSubtractionCsvParameterized(String a, String b, String expected) {
+			assertThat(restTemplate.getForObject("/subtraction?a="+a+"&b="+b, String.class))
+					.isEqualTo(expected);
+		}
+	}
+
+	@Nested
+	@DisplayName(value="Division tests")
+	class DivisionTests {
+		@DisplayName("multiple divisions")
+		@ParameterizedTest(name="[{index}] {0} / {1} = {2}")
+		@CsvSource({
+				"1,   2,   0.5",
+				"1,   1,   1",
+				"1.0, 1.0, 1",
+				"1,  -2,  -0.5",
+				"1.5, 2,   0.75",
+				"'',  2,   0",
+				"1.5, 1.5, 1"
+		})
+		void canDivisionCsvParameterized(String a, String b, String expected) {
+			assertThat(restTemplate.getForObject("/division?a="+a+"&b="+b, String.class))
+					.isEqualTo(expected);
+		}
+	}
+
 }
 
