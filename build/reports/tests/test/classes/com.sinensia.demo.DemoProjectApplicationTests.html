@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">4</div>
+<div class="counter">39</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.957s</div>
+<div class="counter">7.511s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,28 +73,243 @@
 <thead>
 <tr>
 <th>Test</th>
+<th>Method name</th>
 <th>Duration</th>
 <th>Result</th>
 </tr>
 </thead>
 <tr>
-<td class="success">contextLoads()</td>
-<td class="success">0.027s</td>
+<td class="success">[1] 1 + 2 = 3</td>
+<td class="success">canAddCsvParameterized(String, String, String)[1]</td>
+<td class="success">0.048s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">rootTest(TestRestTemplate)</td>
-<td class="success">1.831s</td>
+<td class="success">[2] 1 + 1 = 2</td>
+<td class="success">canAddCsvParameterized(String, String, String)[2]</td>
+<td class="success">0.059s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">rootTestHello(TestRestTemplate)</td>
+<td class="success">[3] 1.0 + 1.0 = 2</td>
+<td class="success">canAddCsvParameterized(String, String, String)[3]</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] 1 + -2 = -1</td>
+<td class="success">canAddCsvParameterized(String, String, String)[4]</td>
+<td class="success">0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] 1.5 + 2 = 3.5</td>
+<td class="success">canAddCsvParameterized(String, String, String)[5]</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6]  + 2 = 2</td>
+<td class="success">canAddCsvParameterized(String, String, String)[6]</td>
+<td class="success">0.079s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[7] 1.5 + 1.5 = 3</td>
+<td class="success">canAddCsvParameterized(String, String, String)[7]</td>
+<td class="success">0.031s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">multiple additions [1] 1 + 2 = 3</td>
+<td class="success">canAddCsvParameterizedFloat(String, String, String)[1]</td>
+<td class="success">0.154s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">multiple additions [2] 1 + 1 = 2</td>
+<td class="success">canAddCsvParameterizedFloat(String, String, String)[2]</td>
+<td class="success">0.092s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">multiple additions [3] 1.0 + 1.0 = 2</td>
+<td class="success">canAddCsvParameterizedFloat(String, String, String)[3]</td>
+<td class="success">0.051s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">multiple additions [4] 1 + -2 = -1</td>
+<td class="success">canAddCsvParameterizedFloat(String, String, String)[4]</td>
+<td class="success">0.077s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">multiple additions [5] 1.5 + 2 = 3.5</td>
+<td class="success">canAddCsvParameterizedFloat(String, String, String)[5]</td>
+<td class="success">0.035s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">multiple additions [6]  + 2 = 2</td>
+<td class="success">canAddCsvParameterizedFloat(String, String, String)[6]</td>
+<td class="success">0.043s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">multiple additions [7] 1.5 + 1.5 = 3</td>
+<td class="success">canAddCsvParameterizedFloat(String, String, String)[7]</td>
+<td class="success">0.050s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddExceptionJsonString()</td>
+<td class="success">canAddExceptionJsonString()</td>
+<td class="success">0.315s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddFloat()</td>
+<td class="success">canAddFloat()</td>
+<td class="success">0.573s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddFloatException()</td>
+<td class="success">canAddFloatException()</td>
+<td class="success">0.084s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddMultiple(TestRestTemplate)</td>
+<td class="success">canAddMultiple(TestRestTemplate)</td>
+<td class="success">0.093s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddNegativeTest(TestRestTemplate)</td>
+<td class="success">canAddNegativeTest(TestRestTemplate)</td>
+<td class="success">0.047s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddNullATest(TestRestTemplate)</td>
+<td class="success">canAddNullATest(TestRestTemplate)</td>
+<td class="success">0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddNullBTest(TestRestTemplate)</td>
+<td class="success">canAddNullBTest(TestRestTemplate)</td>
+<td class="success">0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddRealTest(TestRestTemplate)</td>
+<td class="success">canAddRealTest(TestRestTemplate)</td>
+<td class="success">0.080s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddTest(TestRestTemplate)</td>
+<td class="success">canAddTest(TestRestTemplate)</td>
+<td class="success">0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">canAddZeroTest(TestRestTemplate)</td>
+<td class="success">canAddZeroTest(TestRestTemplate)</td>
 <td class="success">0.042s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">rootTestHelloNombre(TestRestTemplate)</td>
-<td class="success">0.057s</td>
+<td class="success">contextLoads()</td>
+<td class="success">contextLoads()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">helloNameTest()</td>
+<td class="success">helloNameTest()</td>
+<td class="success">4.222s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">helloNames()</td>
+<td class="success">helloNames()</td>
+<td class="success">0.085s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] name=Luis</td>
+<td class="success">helloParamNames(String)[1]</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] name=Luis Antonio</td>
+<td class="success">helloParamNames(String)[2]</td>
+<td class="success">0.077s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] name=Antonio</td>
+<td class="success">helloParamNames(String)[3]</td>
+<td class="success">0.098s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] name=Reula</td>
+<td class="success">helloParamNames(String)[4]</td>
+<td class="success">0.069s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] (a, Hello a!) &quot;a&quot; -&gt; &quot;Hello a!&quot;</td>
+<td class="success">helloParamNamesCsv(String, String)[1]</td>
+<td class="success">0.257s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] (b, Hello b!) &quot;b&quot; -&gt; &quot;Hello b!&quot;</td>
+<td class="success">helloParamNamesCsv(String, String)[2]</td>
+<td class="success">0.075s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] (null, Hello null!) &quot;null&quot; -&gt; &quot;Hello null!&quot;</td>
+<td class="success">helloParamNamesCsv(String, String)[3]</td>
+<td class="success">0.060s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] (, Hello World!) &quot;&quot; -&gt; &quot;Hello World!&quot;</td>
+<td class="success">helloParamNamesCsv(String, String)[4]</td>
+<td class="success">0.109s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] ( , Hello  !) &quot; &quot; -&gt; &quot;Hello  !&quot;</td>
+<td class="success">helloParamNamesCsv(String, String)[5]</td>
+<td class="success">0.060s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6] (first+last, Hello first last!) &quot;first+last&quot; -&gt; &quot;Hello first last!&quot;</td>
+<td class="success">helloParamNamesCsv(String, String)[6]</td>
+<td class="success">0.075s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">helloTest()</td>
+<td class="success">helloTest()</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">rootTest()</td>
+<td class="success">rootTest()</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,24 +317,25 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15:00:59.809 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-15:00:59.837 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-15:01:00.067 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.sinensia.demo.DemoProjectApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-15:01:00.119 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sinensia.demo.DemoProjectApplicationTests], using SpringBootContextLoader
-15:01:00.141 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sinensia.demo.DemoProjectApplicationTests]: class path resource [com/sinensia/demo/DemoProjectApplicationTests-context.xml] does not exist
-15:01:00.151 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sinensia.demo.DemoProjectApplicationTests]: class path resource [com/sinensia/demo/DemoProjectApplicationTestsContext.groovy] does not exist
-15:01:00.163 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.sinensia.demo.DemoProjectApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-15:01:00.172 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.sinensia.demo.DemoProjectApplicationTests]: DemoProjectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-15:01:00.364 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.sinensia.demo.DemoProjectApplicationTests]
-15:01:00.530 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/gftadmin/Desktop/hello-spring/build/classes/java/main/com/sinensia/demo/DemoProjectApplication.class]
-15:01:00.536 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.sinensia.demo.DemoProjectApplication for test class com.sinensia.demo.DemoProjectApplicationTests
-15:01:00.798 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.sinensia.demo.DemoProjectApplicationTests]: using defaults.
-15:01:00.818 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-15:01:00.874 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-15:01:00.879 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-15:01:00.884 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4bef0fe3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@62ea3440, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@27953a83, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@556d0826, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@66ce957f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@55b5f5d2, org.springframework.test.context.event.EventPublishingTestExecutionListener@5bfa8cc5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@666b83a4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@749c877b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@efde75f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@16ecee1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3b220bcb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2b95e48b]
-15:01:00.901 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7894f09b testClass = DemoProjectApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3d484181 testClass = DemoProjectApplicationTests, locations = '{}', classes = '{class com.sinensia.demo.DemoProjectApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@38604b81, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ec54a5c9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@d771cc9, [ImportsContextCustomizer@6111ba37 key = [org.springframework.boot.autoconfigure.security.oauth2.client.reactive.ReactiveOAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.reactive.ReactiveOAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f354bcf, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@74589991, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@130e116b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3d34d211], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-15:01:00.943 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7894f09b testClass = DemoProjectApplicationTests, testInstance = com.sinensia.demo.DemoProjectApplicationTests@3e34ace1, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3d484181 testClass = DemoProjectApplicationTests, locations = '{}', classes = '{class com.sinensia.demo.DemoProjectApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@38604b81, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ec54a5c9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@d771cc9, [ImportsContextCustomizer@6111ba37 key = [org.springframework.boot.autoconfigure.security.oauth2.client.reactive.ReactiveOAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.reactive.ReactiveOAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f354bcf, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@74589991, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@130e116b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3d34d211], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
+<pre>12:39:10.299 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:39:10.394 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:39:10.676 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.sinensia.demo.DemoProjectApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:39:10.752 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sinensia.demo.DemoProjectApplicationTests], using SpringBootContextLoader
+12:39:10.776 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sinensia.demo.DemoProjectApplicationTests]: class path resource [com/sinensia/demo/DemoProjectApplicationTests-context.xml] does not exist
+12:39:10.783 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.sinensia.demo.DemoProjectApplicationTests]: class path resource [com/sinensia/demo/DemoProjectApplicationTestsContext.groovy] does not exist
+12:39:10.791 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.sinensia.demo.DemoProjectApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:39:10.798 [Test worker] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Ignoring class [com.sinensia.demo.DemoProjectApplicationTests$AppTests]; it must be static, non-private, non-final, and annotated with @Configuration to be considered a default configuration class.
+12:39:10.799 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.sinensia.demo.DemoProjectApplicationTests]: DemoProjectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:39:11.393 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.sinensia.demo.DemoProjectApplicationTests]
+12:39:11.951 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/gftadmin/Desktop/hello-spring/build/classes/java/main/com/sinensia/demo/DemoProjectApplication.class]
+12:39:11.962 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.sinensia.demo.DemoProjectApplication for test class com.sinensia.demo.DemoProjectApplicationTests
+12:39:12.867 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.sinensia.demo.DemoProjectApplicationTests]: using defaults.
+12:39:12.892 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+12:39:13.034 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+12:39:13.040 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+12:39:13.043 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30990c1b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2453f95d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@44828f6b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2dbe250d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@553f1d75, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e1d8f9e, org.springframework.test.context.event.EventPublishingTestExecutionListener@3e34ace1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@62fe6067, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4f071df8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4de41af9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@56ace400, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@47404bea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@305f7627]
+12:39:13.105 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2611b9a3 testClass = DemoProjectApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@54227100 testClass = DemoProjectApplicationTests, locations = '{}', classes = '{class com.sinensia.demo.DemoProjectApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@d41f816, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ec54a5c9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@21337f7b, [ImportsContextCustomizer@6b5894c8 key = [org.springframework.boot.autoconfigure.security.oauth2.client.reactive.ReactiveOAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.reactive.ReactiveOAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2ef14fe, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7fb95505, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13330ac6, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3d34d211], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+12:39:13.277 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2611b9a3 testClass = DemoProjectApplicationTests, testInstance = com.sinensia.demo.DemoProjectApplicationTests@28d6290, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@54227100 testClass = DemoProjectApplicationTests, locations = '{}', classes = '{class com.sinensia.demo.DemoProjectApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@d41f816, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@ec54a5c9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@21337f7b, [ImportsContextCustomizer@6b5894c8 key = [org.springframework.boot.autoconfigure.security.oauth2.client.reactive.ReactiveOAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.reactive.ReactiveOAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2ef14fe, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7fb95505, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@13330ac6, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3d34d211], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -129,18 +345,20 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.3)
 
-2022-01-27 15:01:02.746  INFO 52840 --- [    Test worker] c.s.demo.DemoProjectApplicationTests     : Starting DemoProjectApplicationTests using Java 11.0.13 on ubuntu with PID 52840 (started by gftadmin in /home/gftadmin/Desktop/hello-spring)
-2022-01-27 15:01:02.759  INFO 52840 --- [    Test worker] c.s.demo.DemoProjectApplicationTests     : No active profile set, falling back to default profiles: default
-2022-01-27 15:01:10.149  INFO 52840 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-01-27 15:01:10.247  INFO 52840 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-01-27 15:01:10.254  INFO 52840 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
-2022-01-27 15:01:11.282  INFO 52840 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-01-27 15:01:11.296  INFO 52840 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8348 ms
-2022-01-27 15:01:15.208  INFO 52840 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 46639 (http) with context path ''
-2022-01-27 15:01:15.242  INFO 52840 --- [    Test worker] c.s.demo.DemoProjectApplicationTests     : Started DemoProjectApplicationTests in 14.23 seconds (JVM running for 19.943)
-2022-01-27 15:01:16.850  INFO 52840 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-27 15:01:16.851  INFO 52840 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-01-27 15:01:16.854  INFO 52840 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-01-31 12:39:16.364  INFO 85763 --- [    Test worker] c.s.demo.DemoProjectApplicationTests     : Starting DemoProjectApplicationTests using Java 11.0.13 on ubuntu with PID 85763 (started by gftadmin in /home/gftadmin/Desktop/hello-spring)
+2022-01-31 12:39:16.370  INFO 85763 --- [    Test worker] c.s.demo.DemoProjectApplicationTests     : No active profile set, falling back to default profiles: default
+2022-01-31 12:39:24.132  INFO 85763 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-31 12:39:24.196  INFO 85763 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-31 12:39:24.201  INFO 85763 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-31 12:39:24.692  INFO 85763 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-31 12:39:24.710  INFO 85763 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8194 ms
+2022-01-31 12:39:30.358  INFO 85763 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 46515 (http) with context path ''
+2022-01-31 12:39:30.456  INFO 85763 --- [    Test worker] c.s.demo.DemoProjectApplicationTests     : Started DemoProjectApplicationTests in 16.947 seconds (JVM running for 25.408)
+2022-01-31 12:39:33.794  INFO 85763 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-31 12:39:33.798  INFO 85763 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-31 12:39:33.809  INFO 85763 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-01-31 12:39:38.132  WARN 85763 --- [o-auto-1-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: &quot;string&quot;]
+2022-01-31 12:39:38.540  WARN 85763 --- [-auto-1-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: &quot;hola&quot;]
 </pre>
 </span>
 </div>
@@ -152,7 +370,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.3.3</a> at Jan 27, 2022, 3:01:17 PM</p>
+<a href="http://www.gradle.org">Gradle 7.3.3</a> at Jan 31, 2022, 12:39:40 PM</p>
 </div>
 </div>
 </body>
