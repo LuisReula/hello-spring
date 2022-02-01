@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Generated;
+import java.math.BigDecimal;
+
+import static java.math.RoundingMode.HALF_DOWN;
 
 @SpringBootApplication
 @RestController
@@ -68,14 +71,9 @@ public class DemoProjectApplication { //Proyecto de testeo para una calculadora
 
 
 	@GetMapping("/division")
-	public Object division( @RequestParam(value="a", defaultValue="0") Float a,
-							   @RequestParam(value="b", defaultValue="0") Float b){
-		Float div =a/b;
-		Float decimals = div - div.intValue();
-		if (decimals!=0){
-			return div;
-		}
-		return  Integer.valueOf(div.intValue());
+	public BigDecimal division(@RequestParam(value="a", defaultValue="0") BigDecimal a,
+							   @RequestParam(value="b", defaultValue="0") BigDecimal b){
+		return a.divide(b, 2, HALF_DOWN);
 	}
 
 

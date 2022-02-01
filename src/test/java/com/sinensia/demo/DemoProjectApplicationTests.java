@@ -13,6 +13,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.web.client.RestClientException;
 
+import java.math.BigDecimal;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -258,19 +260,27 @@ class DemoProjectApplicationTests {
 		@DisplayName("multiple divisions")
 		@ParameterizedTest(name="[{index}] {0} / {1} = {2}")
 		@CsvSource({
-				"1,   2,   0.5",
-				"1,   1,   1",
-				"1.0, 1.0, 1",
-				"1,  -2,  -0.5",
+				"1, 2, 0.50",
+				"1, 1, 1.00",
+				"1.0, 1.0, 1.00",
+				"1,  -2,  -0.50",
 				"1.5, 2,   0.75",
-				"'',  2,   0",
-				"1.5, 1.5, 1"
+				"'',  2,   0.00",
+				"10, 3, 3.33"
 		})
 		void canDivisionCsvParameterized(String a, String b, String expected) {
 			assertThat(restTemplate.getForObject("/division?a="+a+"&b="+b, String.class))
 					.isEqualTo(expected);
 		}
+
+		@Test
+		void divideByZero() {
+			Exception thrown = assertThrows(RestClientException.class, ()->{
+				restTemplate.getForObject("/division?a=10&b=0", Float.class);
+			});
+		}
 	}
 
 }
+
 
