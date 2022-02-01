@@ -2,6 +2,17 @@ pipeline {
     agent any
 
     stages {
+        stage('Test'){
+            steps{
+                sh '.gradlew clean test'
+            }
+            post{
+                success {
+                    junit 'build/test-results/test/*.xml'
+                    jacoco execPattern: 'build/jacoco/*.exec'
+                }
+            }
+        }
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
@@ -14,10 +25,13 @@ pipeline {
                 // If Gradle was able to run the tests, even if some of the test
                 // failed, record the test results and archive the jar file.
                 success {
-                    junit 'build/test-results/test/*.xml'
                     archiveArtifacts 'build/libs/*.jar'
-                    jacoco execPattern: 'build/jacoco/*.exec'
                  }
+            }
+        }
+        stage('Deploy'){
+            steps{
+                echo 'Deploying...'
             }
         }
     }
