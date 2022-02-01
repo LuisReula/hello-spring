@@ -7,7 +7,7 @@ pipeline {
                 sh './gradlew clean test'
             }
             post{
-                success {
+                always {
                     junit 'build/test-results/test/*.xml'
                     jacoco execPattern: 'build/jacoco/*.exec'
                 }
@@ -18,7 +18,7 @@ pipeline {
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/LuisReula/hello-spring'
                 // Run Gradle Wrapper
-                sh "./gradlew clean test assemble"
+                sh "./gradlew assemble"
             }
 
             post {
