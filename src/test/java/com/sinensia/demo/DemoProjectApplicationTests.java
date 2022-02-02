@@ -290,7 +290,7 @@ class DemoProjectApplicationTests {
 				"1, 1",
 				"2, 1.4",
 				"25, 5",
-				"'',  0",
+				"'',  0"
 		})
 		void canDivisionCsvParameterized(String a, String b, String expected) {
 			assertThat(restTemplate.getForObject("/sqrt?a="+a, String.class))
