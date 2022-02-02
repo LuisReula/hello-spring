@@ -1,6 +1,5 @@
 package com.sinensia.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Generated;
 import java.math.BigDecimal;
+import java.math.*;
 
 import static java.math.RoundingMode.HALF_DOWN;
 
@@ -76,5 +76,9 @@ public class DemoProjectApplication { //Proyecto de testeo para una calculadora
 		return a.divide(b, 2, HALF_DOWN);
 	}
 
+	@GetMapping("/sqrt")
+	public BigDecimal sqrt(@RequestParam(value = "a", defaultValue = "0.00") BigDecimal a){
+		return a.sqrt(new MathContext(2));
+	}
 
 }
