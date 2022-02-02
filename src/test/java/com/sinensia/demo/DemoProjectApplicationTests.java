@@ -285,14 +285,14 @@ class DemoProjectApplicationTests {
 	@DisplayName(value="Square Root tests")
 	class sqrtTests {
 		@DisplayName("multiple sqrts")
-		@ParameterizedTest(name="[{index}] {0} = {1}")
+		@ParameterizedTest(name="[{index}] sqrt{0} = {1}")
 		@CsvSource({
 				"1, 1",
 				"2, 1.4",
 				"25, 5",
-				"'',  0"
+				"'',  0.0"
 		})
-		void canDivisionCsvParameterized(String a, String b, String expected) {
+		void canDivisionCsvParameterized(String a, String expected) {
 			assertThat(restTemplate.getForObject("/sqrt?a="+a, String.class))
 					.isEqualTo(expected);
 		}

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DemoProjectApplication.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">com.sinensia.demo</a> &gt; <span class="el_source">DemoProjectApplication.java</span></div><h1>DemoProjectApplication.java</h1><pre class="source lang-java linenums">package com.sinensia.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Generated;
 import java.math.BigDecimal;
+import java.math.*;
 
 import static java.math.RoundingMode.HALF_DOWN;
 
@@ -24,58 +24,62 @@ import static java.math.RoundingMode.HALF_DOWN;
 	//Inicial
 	@GetMapping(&quot;/&quot;)
 	public String root(){
-<span class="fc" id="L27">		return String.format(&quot;Bienvenidos a mi primera prueba&quot;);</span>
+<span class="nc" id="L27">		return String.format(&quot;Bienvenidos a mi primera prueba&quot;);</span>
 	}
 
 	//Hello World! en dir: /hello
 	@GetMapping(&quot;/hello&quot;)
 	public String hello(@RequestParam(value = &quot;name&quot;, defaultValue = &quot;World&quot;) String Name){
-<span class="fc" id="L33">		return String.format(&quot;Hello %s!&quot;, Name);</span>
+<span class="nc" id="L33">		return String.format(&quot;Hello %s!&quot;, Name);</span>
 	}
 
 	//Suma en dir: /add
 	@GetMapping(&quot;/add&quot;)
 	public Object add( @RequestParam(value=&quot;a&quot;, defaultValue=&quot;0&quot;) Float a,
 						  @RequestParam(value=&quot;b&quot;, defaultValue=&quot;0&quot;) Float b){
-<span class="fc" id="L40">		Float sum =a+b;</span>
-<span class="fc" id="L41">		Float decimals = sum - sum.intValue();</span>
-<span class="fc bfc" id="L42" title="All 2 branches covered.">		if (decimals!=0){</span>
-<span class="fc" id="L43">			return sum;</span>
+<span class="nc" id="L40">		Float sum =a+b;</span>
+<span class="nc" id="L41">		Float decimals = sum - sum.intValue();</span>
+<span class="nc bnc" id="L42" title="All 2 branches missed.">		if (decimals!=0){</span>
+<span class="nc" id="L43">			return sum;</span>
 		}
-<span class="fc" id="L45">		return  Integer.valueOf(sum.intValue());</span>
+<span class="nc" id="L45">		return  Integer.valueOf(sum.intValue());</span>
 	}
 
 	//Producto en dir: /multiply
 	@GetMapping(&quot;/multiply&quot;)
 	public Object multiply( @RequestParam(value=&quot;a&quot;, defaultValue=&quot;0&quot;) Float a,
 							   @RequestParam(value=&quot;b&quot;, defaultValue=&quot;0&quot;) Float b){
-<span class="fc" id="L52">		Float product =a*b;</span>
-<span class="fc" id="L53">		Float decimals = product - product.intValue();</span>
-<span class="fc bfc" id="L54" title="All 2 branches covered.">		if (decimals!=0){</span>
-<span class="fc" id="L55">			return product;</span>
+<span class="nc" id="L52">		Float product =a*b;</span>
+<span class="nc" id="L53">		Float decimals = product - product.intValue();</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">		if (decimals!=0){</span>
+<span class="nc" id="L55">			return product;</span>
 		}
-<span class="fc" id="L57">		return  Integer.valueOf(product.intValue());</span>
+<span class="nc" id="L57">		return  Integer.valueOf(product.intValue());</span>
 	}
 
 	//Resta en dir: /subtraction
 	@GetMapping(&quot;/subtraction&quot;)
 	public Object subtraction( @RequestParam(value=&quot;a&quot;, defaultValue=&quot;0&quot;) Float a,
 							   @RequestParam(value=&quot;b&quot;, defaultValue=&quot;0&quot;) Float b){
-<span class="fc" id="L64">		Float subt =a-b;</span>
-<span class="fc" id="L65">		Float decimals = subt - subt.intValue();</span>
-<span class="fc bfc" id="L66" title="All 2 branches covered.">		if (decimals!=0){</span>
-<span class="fc" id="L67">			return subt;</span>
+<span class="nc" id="L64">		Float subt =a-b;</span>
+<span class="nc" id="L65">		Float decimals = subt - subt.intValue();</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">		if (decimals!=0){</span>
+<span class="nc" id="L67">			return subt;</span>
 		}
-<span class="fc" id="L69">		return  Integer.valueOf(subt.intValue());</span>
+<span class="nc" id="L69">		return  Integer.valueOf(subt.intValue());</span>
 	}
 
 
 	@GetMapping(&quot;/division&quot;)
 	public BigDecimal division(@RequestParam(value=&quot;a&quot;, defaultValue=&quot;0&quot;) BigDecimal a,
 							   @RequestParam(value=&quot;b&quot;, defaultValue=&quot;0&quot;) BigDecimal b){
-<span class="fc" id="L76">		return a.divide(b, 2, HALF_DOWN);</span>
+<span class="nc" id="L76">		return a.divide(b, 2, HALF_DOWN);</span>
 	}
 
+	@GetMapping(&quot;/sqrt&quot;)
+	public BigDecimal sqrt(@RequestParam(value = &quot;a&quot;, defaultValue = &quot;0.00&quot;) BigDecimal a){
+<span class="fc" id="L81">		return a.sqrt(new MathContext(2));</span>
+	}
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
