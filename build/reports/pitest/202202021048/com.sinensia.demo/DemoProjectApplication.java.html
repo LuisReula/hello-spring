@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>DemoProjectApplication.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.sinensia.demo;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.beans.factory.annotation.Autowired;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.boot.SpringApplication;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.boot.autoconfigure.SpringBootApplication;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.web.bind.annotation.GetMapping;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.web.bind.annotation.RequestParam;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.web.bind.annotation.RestController;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import javax.annotation.Generated;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.math.BigDecimal;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import static java.math.RoundingMode.HALF_DOWN;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>@SpringBootApplication</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>@RestController</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class DemoProjectApplication { //Proyecto de testeo para una calculadora</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@Generated(value=&#34;org.springframework.boot&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public static void main(String[] args) {</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;&#9;SpringApplication.run(DemoProjectApplication.class, args);</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;//Inicial</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@GetMapping(&#34;/&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public String root(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_27'/>
+27
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_27'>1</a>
+<span>
+1. root : replaced return value with &#34;&#34; for com/sinensia/demo/DemoProjectApplication::root &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return String.format(&#34;Bienvenidos a mi primera prueba&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;//Hello World! en dir: /hello</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@GetMapping(&#34;/hello&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public String hello(@RequestParam(value = &#34;name&#34;, defaultValue = &#34;World&#34;) String Name){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_33'>1</a>
+<span>
+1. hello : replaced return value with &#34;&#34; for com/sinensia/demo/DemoProjectApplication::hello &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return String.format(&#34;Hello %s!&#34;, Name);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;//Suma en dir: /add</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@GetMapping(&#34;/add&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public Object add( @RequestParam(value=&#34;a&#34;, defaultValue=&#34;0&#34;) Float a,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;&#9;  @RequestParam(value=&#34;b&#34;, defaultValue=&#34;0&#34;) Float b){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_40'/>
+40
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_40'>1</a>
+<span>
+1. add : Replaced float addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;Float sum =a+b;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_41'/>
+41
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_41'>1</a>
+<span>
+1. add : Replaced float subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;Float decimals = sum - sum.intValue();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_42'/>
+42
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_42'>1</a>
+<span>
+1. add : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (decimals!=0){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_43'>1</a>
+<span>
+1. add : replaced return value with null for com/sinensia/demo/DemoProjectApplication::add &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return sum;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_45'>1</a>
+<span>
+1. add : replaced return value with null for com/sinensia/demo/DemoProjectApplication::add &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return  Integer.valueOf(sum.intValue());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;//Producto en dir: /multiply</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@GetMapping(&#34;/multiply&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public Object multiply( @RequestParam(value=&#34;a&#34;, defaultValue=&#34;0&#34;) Float a,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;&#9;&#9;   @RequestParam(value=&#34;b&#34;, defaultValue=&#34;0&#34;) Float b){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_52'>1</a>
+<span>
+1. multiply : Replaced float multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;Float product =a*b;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_53'/>
+53
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_53'>1</a>
+<span>
+1. multiply : Replaced float subtraction with addition &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;&#9;Float decimals = product - product.intValue();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_54'/>
+54
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_54'>1</a>
+<span>
+1. multiply : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (decimals!=0){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_55'/>
+55
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_55'>1</a>
+<span>
+1. multiply : replaced return value with null for com/sinensia/demo/DemoProjectApplication::multiply &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return product;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_57'/>
+57
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_57'>1</a>
+<span>
+1. multiply : replaced return value with null for com/sinensia/demo/DemoProjectApplication::multiply &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return  Integer.valueOf(product.intValue());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;//Resta en dir: /subtraction</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@GetMapping(&#34;/subtraction&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public Object subtraction( @RequestParam(value=&#34;a&#34;, defaultValue=&#34;0&#34;) Float a,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;&#9;&#9;   @RequestParam(value=&#34;b&#34;, defaultValue=&#34;0&#34;) Float b){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_64'/>
+64
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_64'>1</a>
+<span>
+1. subtraction : Replaced float subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;Float subt =a-b;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_65'/>
+65
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_65'>1</a>
+<span>
+1. subtraction : Replaced float subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;Float decimals = subt - subt.intValue();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_66'/>
+66
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_66'>1</a>
+<span>
+1. subtraction : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (decimals!=0){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_67'/>
+67
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_67'>1</a>
+<span>
+1. subtraction : replaced return value with null for com/sinensia/demo/DemoProjectApplication::subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return subt;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_69'/>
+69
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_69'>1</a>
+<span>
+1. subtraction : replaced return value with null for com/sinensia/demo/DemoProjectApplication::subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return  Integer.valueOf(subt.intValue());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;@GetMapping(&#34;/division&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public BigDecimal division(@RequestParam(value=&#34;a&#34;, defaultValue=&#34;0&#34;) BigDecimal a,</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;&#9;&#9;&#9;&#9;   @RequestParam(value=&#34;b&#34;, defaultValue=&#34;0&#34;) BigDecimal b){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_76'/>
+76
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_76'>1</a>
+<span>
+1. division : replaced return value with null for com/sinensia/demo/DemoProjectApplication::division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return a.divide(b, 2, HALF_DOWN);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@e7edb54_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_27'>27</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_27'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>root<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:rootTest()]</span></span> replaced return value with &#34;&#34; for com/sinensia/demo/DemoProjectApplication::root &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hello<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNamesCsv(java.lang.String, java.lang.String)]/[test-template-invocation:#2]</span></span> replaced return value with &#34;&#34; for com/sinensia/demo/DemoProjectApplication::hello &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_40'>40</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_40'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> Replaced float addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_41'>41</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_41'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> Replaced float subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_42'>42</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_42'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddFloat()]</span></span> replaced return value with null for com/sinensia/demo/DemoProjectApplication::add &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> replaced return value with null for com/sinensia/demo/DemoProjectApplication::add &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_52'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>multiply<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1]</span></span> Replaced float multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_53'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>multiply<br/><b>Killed by : </b>none</span></span> Replaced float subtraction with addition &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_54'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>multiply<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#7]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_55'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>multiply<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#7]</span></span> replaced return value with null for com/sinensia/demo/DemoProjectApplication::multiply &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_57'>57</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_57'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>multiply<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#2]</span></span> replaced return value with null for com/sinensia/demo/DemoProjectApplication::multiply &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_64'>64</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_64'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>subtraction<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6]</span></span> Replaced float subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_65'>65</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_65'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>subtraction<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6]</span></span> Replaced float subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_66'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>subtraction<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_67'>67</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_67'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>subtraction<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#5]</span></span> replaced return value with null for com/sinensia/demo/DemoProjectApplication::subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_69'>69</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_69'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>subtraction<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6]</span></span> replaced return value with null for com/sinensia/demo/DemoProjectApplication::subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@e7edb54_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@e7edb54_76'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>division<br/><b>Killed by : </b>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:DivisionTests]/[test-template:canDivisionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#2]</span></span> replaced return value with null for com/sinensia/demo/DemoProjectApplication::division &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddTest(org.springframework.boot.test.web.client.TestRestTemplate)] (111 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6] (41 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#4] (47 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#2] (46 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#4] (31 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#2] (29 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:AppTests]/[method:appCanAddReturnsInteger()] (50 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddZeroTest(org.springframework.boot.test.web.client.TestRestTemplate)] (79 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6] (44 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:rootTest()] (34 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNamesCsv(java.lang.String, java.lang.String)]/[test-template-invocation:#2] (19 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNamesCsv(java.lang.String, java.lang.String)]/[test-template-invocation:#4] (25 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNames(java.lang.String)]/[test-template-invocation:#3] (20 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNamesCsv(java.lang.String, java.lang.String)]/[test-template-invocation:#6] (26 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddFloat()] (27 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#4] (52 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6] (27 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:helloTest()] (43 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:helloNameTest()] (44 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#2] (44 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNames(java.lang.String)]/[test-template-invocation:#1] (30 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#4] (33 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:AppTests]/[method:appCanAddReturnsFloat()] (62 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#2] (34 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6] (43 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:DivisionTests]/[test-template:canDivisionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#2] (50 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:DivisionTests]/[test-template:canDivisionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#4] (180 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddNullBTest(org.springframework.boot.test.web.client.TestRestTemplate)] (74 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:DivisionTests]/[test-template:canDivisionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#6] (61 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#7] (51 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#5] (101 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#3] (48 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#3] (52 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:SubtractionTests]/[test-template:canSubtractionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1] (52 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1] (26 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddMultiple(org.springframework.boot.test.web.client.TestRestTemplate)] (137 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:helloNames()] (64 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#7] (68 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddExceptionJsonString()] (95 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNamesCsv(java.lang.String, java.lang.String)]/[test-template-invocation:#1] (37 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNames(java.lang.String)]/[test-template-invocation:#2] (30 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNamesCsv(java.lang.String, java.lang.String)]/[test-template-invocation:#3] (57 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNames(java.lang.String)]/[test-template-invocation:#4] (45 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:helloParamNamesCsv(java.lang.String, java.lang.String)]/[test-template-invocation:#5] (44 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#7] (57 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#5] (53 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#5] (37 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#3] (54 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#3] (44 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:MultiplyTests]/[test-template:canMultiplyCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1] (51 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterizedFloat(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1] (36 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#7] (38 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:DivisionTests]/[test-template:canDivisionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#1] (74 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[test-template:canAddCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#5] (48 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddRealTest(org.springframework.boot.test.web.client.TestRestTemplate)] (68 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:DivisionTests]/[test-template:canDivisionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#3] (72 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:DivisionTests]/[test-template:canDivisionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#5] (57 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[nested-class:DivisionTests]/[test-template:canDivisionCsvParameterized(java.lang.String, java.lang.String, java.lang.String)]/[test-template-invocation:#7] (69 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddNullATest(org.springframework.boot.test.web.client.TestRestTemplate)] (77 ms)</li><li>com.sinensia.demo.DemoProjectApplicationTests.[engine:junit-jupiter]/[class:com.sinensia.demo.DemoProjectApplicationTests]/[method:canAddNegativeTest(org.springframework.boot.test.web.client.TestRestTemplate)] (112 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.7.0
+
+</body>
+</html>
