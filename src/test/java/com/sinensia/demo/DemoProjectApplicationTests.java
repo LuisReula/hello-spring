@@ -4,7 +4,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +11,6 @@ import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWeb
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.web.client.RestClientException;
-
-import java.math.BigDecimal;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -23,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @AutoConfigureWebTestClient
 class DemoProjectApplicationTests {
 
+	public static final String B = "&b=";
 	@Autowired TestRestTemplate restTemplate;
 
 	@Test
@@ -82,47 +80,47 @@ class DemoProjectApplicationTests {
 
 	@Test
 	void canAddTest(@Autowired TestRestTemplate restTemplate) {
-		assertThat(restTemplate.getForObject("/add?a=1&b=2", String.class)).isEqualTo("3");
+		assertThat(restTemplate.getForObject("/add?a=1" + B + "2", String.class)).isEqualTo("3");
 	}
 
 	@Test
 	void canAddZeroTest(@Autowired TestRestTemplate restTemplate) {
-		assertThat(restTemplate.getForObject("/add?a=0&b=2", String.class)).isEqualTo("2");
+		assertThat(restTemplate.getForObject("/add?a=0" + B + "2", String.class)).isEqualTo("2");
 	}
 
 	@Test
 	void canAddNegativeTest(@Autowired TestRestTemplate restTemplate) {
-		assertThat(restTemplate.getForObject("/add?a=1&b=-2", String.class)).isEqualTo("-1");
+		assertThat(restTemplate.getForObject("/add?a=1" + B + "-2", String.class)).isEqualTo("-1");
 	}
 
 	@Test
 	void canAddNullATest(@Autowired TestRestTemplate restTemplate) {
-		assertThat(restTemplate.getForObject("/add?a=&b=2", String.class)).isEqualTo("2");
+		assertThat(restTemplate.getForObject("/add?a=" + B + "2", String.class)).isEqualTo("2");
 	}
 
 	@Test
 	void canAddNullBTest(@Autowired TestRestTemplate restTemplate) {
-		assertThat(restTemplate.getForObject("/add?a=1&b=", String.class)).isEqualTo("1");
+		assertThat(restTemplate.getForObject("/add?a=1" + B, String.class)).isEqualTo("1");
 	}
 
 	@Test
 	void canAddRealTest(@Autowired TestRestTemplate restTemplate) {
-		assertThat(restTemplate.getForObject("/add?a=1&b=2.5", String.class)).isEqualTo("3.5");
+		assertThat(restTemplate.getForObject("/add?a=1" + B + "2.5", String.class)).isEqualTo("3.5");
 	}
 
 	@Test
 	void canAddMultiple(@Autowired TestRestTemplate restTemplate) {
-		assertThat(restTemplate.getForObject("/add?a=1&b=2", String.class))
+		assertThat(restTemplate.getForObject("/add?a=1" + B + "2", String.class))
 				.isEqualTo("3");
-		assertThat(restTemplate.getForObject("/add?a=0&b=2", String.class))
+		assertThat(restTemplate.getForObject("/add?a=0" + B + "2", String.class))
 				.isEqualTo("2");
-		assertThat(restTemplate.getForObject("/add?a=1&b=-2", String.class))
+		assertThat(restTemplate.getForObject("/add?a=1" + B + "-2", String.class))
 				.isEqualTo("-1");
-		assertThat(restTemplate.getForObject("/add?a=&b=2", String.class))
+		assertThat(restTemplate.getForObject("/add?a=" + B + "2", String.class))
 				.isEqualTo("2");
-		assertThat(restTemplate.getForObject("/add?a=1.5&b=2", String.class))
+		assertThat(restTemplate.getForObject("/add?a=1.5" + B + "2", String.class))
 				.isEqualTo("3.5");
-		assertThat(restTemplate.getForObject("/add?a=1&b=", String.class))
+		assertThat(restTemplate.getForObject("/add?a=1" + B, String.class))
 				.isEqualTo("1");
 	}
 
@@ -139,27 +137,25 @@ class DemoProjectApplicationTests {
 			"1.5, 1.5, 3"
 	})
 	void canAddCsvParameterized(String a, String b, String expected) {
-		assertThat(restTemplate.getForObject("/add?a="+a+"&b="+b, String.class))
+		assertThat(restTemplate.getForObject("/add?a="+a+ B +b, String.class))
 				.isEqualTo(expected);
 	}
 
 	@Test
 	void canAddExceptionJsonString() {
-		assertThat(restTemplate.getForObject("/add?a=string&b=1", String.class).indexOf("Bad Request"))
+		assertThat(restTemplate.getForObject("/add?a=string" + B + "1", String.class).indexOf("Bad Request"))
 				.isGreaterThan(-1);
 	}
 
 	@Test
 	void canAddFloat() {
-		assertThat(restTemplate.getForObject("/add?a=1.5&b=2", Float.class))
+		assertThat(restTemplate.getForObject("/add?a=1.5" + B + "2", Float.class))
 				.isEqualTo(3.5f);
 	}
 
 	@Test
 	void canAddFloatException() {
-		Exception thrown = assertThrows(RestClientException.class, ()->{
-			restTemplate.getForObject("/add?a=hola&b=2", Float.class);
-		});
+		assertThrows(RestClientException.class, () -> restTemplate.getForObject("/add?a=hola" + B + "2", Float.class));
 	}
 
 	@DisplayName("multiple multiplies")
@@ -174,7 +170,7 @@ class DemoProjectApplicationTests {
 			"1.5, 1.5, 3"
 	})
 	void canAddCsvParameterizedFloat(String a, String b, String expected) {
-		assertThat(restTemplate.getForObject("/add?a="+a+"&b="+b, Float.class))
+		assertThat(restTemplate.getForObject("/add?a="+a+ B +b, Float.class))
 				.isEqualTo(Float.parseFloat(expected));
 	}
 
@@ -229,7 +225,7 @@ class DemoProjectApplicationTests {
 				"1.5, 1.5, 2.25"
 		})
 		void canMultiplyCsvParameterizedFloat(String a, String b, String expected) {
-			assertThat(restTemplate.getForObject("/multiply?a="+a+"&b="+b, Float.class))
+			assertThat(restTemplate.getForObject("/multiply?a="+a+ B +b, Float.class))
 					.isEqualTo(Float.parseFloat(expected));
 		}
 	}
@@ -249,7 +245,7 @@ class DemoProjectApplicationTests {
 				"1.5, 1.5, 0"
 		})
 		void canSubtractionCsvParameterized(String a, String b, String expected) {
-			assertThat(restTemplate.getForObject("/subtraction?a="+a+"&b="+b, String.class))
+			assertThat(restTemplate.getForObject("/subtraction?a="+a+ B +b, String.class))
 					.isEqualTo(expected);
 		}
 	}
@@ -269,14 +265,14 @@ class DemoProjectApplicationTests {
 				"10, 3, 3.33"
 		})
 		void canDivisionCsvParameterized(String a, String b, String expected) {
-			assertThat(restTemplate.getForObject("/division?a="+a+"&b="+b, String.class))
+			assertThat(restTemplate.getForObject("/division?a="+a+ B +b, String.class))
 					.isEqualTo(expected);
 		}
 
 		@Test
 		void divideByZero() {
 			Exception thrown = assertThrows(RestClientException.class, ()->{
-				restTemplate.getForObject("/division?a=10&b=0", Float.class);
+				restTemplate.getForObject("/division?a=10" + B + "0", Float.class);
 			});
 		}
 	}

@@ -78,7 +78,7 @@ public class DemoProjectApplication { //Proyecto de testeo para una calculadora
 
 	@GetMapping("/sqrt")
 	public BigDecimal sqrt(@RequestParam(value = "a", defaultValue = "0.00") BigDecimal a){
-		return a.sqrt(new MathContext(2));
+		return a.sqrt(new MathContext(3));
 	}
 
 }
